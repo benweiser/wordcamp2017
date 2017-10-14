@@ -1,5 +1,18 @@
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
+WordCamp Vegas 2017 Grunt, Gulp, and NPM Scripts Front End Build
+===
+Clone or download this theme and install like any other WordPress theme. This theme is simply _'s (Underscores) with three different build processes for Sass including Grunt, Gulp, and straight npm scripts.
+
+You must have NodeJS installed on your computer in order to use build tools
+https://www.npmjs.com/get-npm
+
+How To Use
+===
+Once you have node installed navigate to either grunt-build, gulp-build, or npm-scripts in your build-scripts folder in the terminal or command line run "npm run watch" 
+
+**These scripts have not been tested on Windows**
+
 _s
 ===
 
