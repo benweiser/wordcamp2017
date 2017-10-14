@@ -13,6 +13,8 @@ Once you have node installed navigate to either grunt-build, gulp-build, or npm-
 
 **These scripts have not been tested on Windows**
 
+Note: In the BrowserSync configs make sure that you replace wordcamp2017.loc with the path to your locally installed WordPress instance. For example, "mywebsite.dev"
+
 _s
 ===
 
