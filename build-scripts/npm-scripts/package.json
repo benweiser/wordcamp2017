@@ -1,0 +1,22 @@
+{
+  "name": "npm-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass '../../src/scss/'  --output '../../assets/css' --source-map-embed --output-style-compressed",
+    "watch:sass": "onchange '../../src/scss/' -- run-s compile:sass ",
+    "browsersync": "browser-sync start --proxy 'wordcamp2017.loc' --tunnel 'wordcamp2017' --files '../../assets/css/'",
+    "watch": "run-p browsersync watch:sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ben Weiser <bweiser86@gmail.com> (http://benweiser.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "onchange": "^3.2.1"
+  }
+}
