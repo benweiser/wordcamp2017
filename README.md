@@ -9,7 +9,7 @@ https://www.npmjs.com/get-npm
 
 How To Use
 ===
-Once you have node installed navigate to either grunt-build, gulp-build, or npm-scripts in your build-scripts folder in the terminal or command line run "npm run watch" 
+Once you have node installed navigate to either grunt-build, gulp-build, or npm-scripts in your build-scripts folder in the terminal or command line run "npm install" and after your node modules are installed run "npm run watch" in the command line
 
 **These scripts have not been tested on Windows**
 
