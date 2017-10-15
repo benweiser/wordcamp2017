@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "config": {
+    "srcPath": "../../src/scss/",
+    "assetsPath": "../../assets/css"
+  },
   "scripts": {
-    "compile:sass": "node-sass '../../src/scss/'  --output '../../assets/css' --source-map-embed --output-style-compressed",
-    "watch:sass": "onchange '../../src/scss/' -- run-s compile:sass ",
-    "browsersync": "browser-sync start --proxy 'wordcamp2017.loc' --tunnel 'wordcamp2017' --files '../../assets/css/'",
+    "compile:sass": "node-sass $npm_package_config_srcPath  --output $npm_package_config_assetsPath --source-map-embed --output-style-compressed",
+    "watch:sass": "onchange $npm_package_config_srcPath -- run-s compile:sass ",
+    "browsersync": "browser-sync start --proxy 'wordcamp2017.loc' --tunnel 'wordcamp2017' --files $npm_package_config_assetsPath",
     "watch": "run-p browsersync watch:sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
