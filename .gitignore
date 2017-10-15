@@ -1,4 +1,3 @@
 build-scripts/grunt-build/node_modules
 build-scripts/gulp-build/node_modules
 build-scripts/npm-scripts/node_modules
-/assets/css/style.css
