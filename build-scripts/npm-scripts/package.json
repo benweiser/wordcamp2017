@@ -5,12 +5,14 @@
   "main": "index.js",
   "config": {
     "srcPath": "../../src/scss/",
-    "assetsPath": "../../assets/css"
+    "assetsPath": "../../assets/css",
+    "proxyURI": "wordcamp2017.loc",
+    "tunnel": "wordcamp2017"
   },
   "scripts": {
     "compile:sass": "node-sass $npm_package_config_srcPath  --output $npm_package_config_assetsPath --source-map-embed --output-style-compressed",
     "watch:sass": "onchange $npm_package_config_srcPath -- run-s compile:sass ",
-    "browsersync": "browser-sync start --proxy 'wordcamp2017.loc' --tunnel 'wordcamp2017' --files $npm_package_config_assetsPath",
+    "browsersync": "browser-sync start --proxy $npm_package_config_proxyURI --tunnel $npm_package_config_tunnel --files $npm_package_config_assetsPath",
     "watch": "run-p browsersync watch:sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
